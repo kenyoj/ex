@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형</title>
+    <style>
+        body{
+            margin-top: 0;   
+             margin-left: 0;
+             margin-right: 0;
+            }
+        /* 데스크탑용 스타일 */
+        div{
+            width: 960px;
+            height: 150px; 
+            margin-right: auto;
+            margin-left: auto;
+            background: #eeff00;
+        }
+        /* 태블릿용 스타일 */
+        @media(max-width:960px)
+        {div 
+            {
+            width:calc(100% - 24px) ;
+            height: 100px;
+            margin-right: 12px;
+            margin-left: 12px;
+            background: #00ff00;
+           
+            }
+        }
+    
+         /* 모바일용 스타일 */
+         @media(max-width:860px)
+         {div
+            {
+            width: calc(100% - 24px) ;
+            height: 40px ;
+            margin-right: 12px;
+            margin-left: 12px;
+            background: #ff0000;
+            
+            }
+         }
+    </style>
+</head>
+<body>
+<div></div>
+    
+</body>
+</html>
